@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Power Consumption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoring Power Consumption</h1>
+
+        <section class="section">
+            <h2>Voltage 1-Phase</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="voltage1-R">-</td>
+                        <td id="voltage1-S">-</td>
+                        <td id="voltage1-T">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Voltage 3-Phase</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="voltage3-R">-</td>
+                        <td id="voltage3-S">-</td>
+                        <td id="voltage3-T">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Ampere</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="ampere-R">-</td>
+                        <td id="ampere-S">-</td>
+                        <td id="ampere-T">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>kWh</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="kwh-R">-</td>
+                        <td id="kwh-S">-</td>
+                        <td id="kwh-T">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>kVARh</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="kvarh-R">-</td>
+                        <td id="kvarh-S">-</td>
+                        <td id="kvarh-T">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Grafik Monitoring</h2>
+            <canvas id="chart"></canvas>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
